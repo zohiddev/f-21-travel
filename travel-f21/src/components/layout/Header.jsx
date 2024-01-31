@@ -21,7 +21,7 @@ function Header() {
                     <NavLink to='/tour' className='header__nav-item'>Туры</NavLink>
                     <NavLink to='/visa' className='header__nav-item'>Визы</NavLink>
                     <NavLink to='/straxovaniya' className='header__nav-item'>Страхование</NavLink>
-                    <NavLink to='contact' className='header__nav-item'>Контакты</NavLink>
+                    <NavLink to='/contact' className='header__nav-item'>Контакты</NavLink>
                 </nav>
             </div>
         </div>
