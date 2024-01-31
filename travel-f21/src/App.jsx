@@ -1,8 +1,13 @@
 import React from 'react'
+import { Footer, Header, Main } from './components/_index'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </>
   )
 }
 
