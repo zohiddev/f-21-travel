@@ -29,7 +29,7 @@ function Categories() {
             card_data: '20.11.2023',
             card_data_day: '7 ночей',
             card_flymesta: 'вылет из Ташкента',
-            card_food: 'завтрак + ужин',
+            card_food: 'завтрак + ужин  ',
         },
         {
             id: 3,
@@ -392,11 +392,11 @@ function Categories() {
                                 <button className='categorie__offer-button-btn' onClick={() => seeProduct()}> Yana korsatish</button>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </>
     )
 }
 
-export default Categories
+export default Categories;

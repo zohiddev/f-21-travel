@@ -6,6 +6,8 @@ function Banner() {
     function toggleDropdown(){
         setDropdown(!dropdown)
     }
+
+    const [count,setCount] = useState(1)
     
     useEffect(function(){
         toggleDropdown
@@ -35,7 +37,7 @@ function Banner() {
                             <div onClick={toggleDropdown} className='banner__form__avia-wrapper-inputs-button'>
                                 <div className='banner__form__avia-wrapper-inputs-button-wrap'>
                                     <p>Пассажиры:</p>
-                                    <p>1</p>
+                                    <p>{count}</p>
                                 </div>
                                 <div className='banner__form__avia-wrapper-inputs-button-wrap'>
                                     <p className='banner__form__avia-wrapper-inputs-button-wrap-text'>Эконом</p>
@@ -52,9 +54,9 @@ function Banner() {
                                             <p className='banner__form__avia__dropdown__texts-subtext'>Старше 12 лет</p>
                                         </div>
                                         <div className="banner__form__avia__dropdown__buttons">
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one">-</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one" onClick={()=> setCount(count -1)}>-</button>
                                             <p className="banner__form__avia__dropdown__buttons-num">1</p>
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two">+</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two" onClick={()=> setCount(count +1)}>+</button>
                                         </div>
                                     </div>
                                     <div className="banner__form__avia__dropdown-wrapper">
@@ -63,9 +65,9 @@ function Banner() {
                                             <p className='banner__form__avia__dropdown__texts-subtext'>От 2 до 12 лет</p>
                                         </div>
                                         <div className="banner__form__avia__dropdown__buttons">
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one">-</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one" onClick={()=> setCount(count -1)}>-</button>
                                             <p className="banner__form__avia__dropdown__buttons-num">0</p>
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two">+</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two" onClick={()=> setCount(count +1)}>+</button>
                                         </div>
                                     </div>
                                     <div className="banner__form__avia__dropdown-wrapper">
@@ -74,9 +76,9 @@ function Banner() {
                                             <p className='banner__form__avia__dropdown__texts-subtext'>До 2 лет, без места</p>
                                         </div>
                                         <div className="banner__form__avia__dropdown__buttons">
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one">-</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-one" onClick={()=> setCount(count -1)}>-</button>
                                             <p className="banner__form__avia__dropdown__buttons-num">0</p>
-                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two">+</button>
+                                            <button className="banner__form__avia__dropdown__buttons-btn banner__form__avia__dropdown__buttons-btn-two" onClick={()=> setCount(count +1)}>+</button>
                                         </div>
                                     </div>
                                 </div>
