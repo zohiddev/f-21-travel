@@ -5,6 +5,8 @@ export const routers = [
     id: 1,
     path: "/",
     component: <Home />,
+
+    
   },
   {
     id: 2,
