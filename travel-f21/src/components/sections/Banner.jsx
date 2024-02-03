@@ -6,6 +6,7 @@ function Banner() {
     function toggleDropdown(){
         setDropdown(!dropdown)
     }
+     
     
     useEffect(function(){
         toggleDropdown
